@@ -1,5 +1,7 @@
+* {
+  transition: all 0.5s;
+}
 body {
-  /* background-color: #93c5fd; */
   background-color: #f3f4f6;
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ body {
 .dark-mode {
   background-color: #374151;
 }
-.container {
+.container, .content, .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,24 +21,20 @@ body {
   height: 30px;
   background-color: #9ca3af;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 50px;
   border: none;
   cursor: pointer;
 }
 .box {
+  font-size: 1.5rem;
   width: 23px;
   height: 23px;
-  /* background-color: #f3f4f6; */
-  background-color: #374151;
   border-radius: 50px;
   margin-right: 2rem;
-  /* margin-right: -2rem; */
 }
-.circle {
-  width: 40px;
-  height: 40px;
+.fa-moon {
+  color: #374151;
+}
+.fa-sun {
+  color: #f3f4f6;
 }
